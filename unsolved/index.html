@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+
+  <body>
+    <div class="container-fluid" >
+      <div class="row" id="wrapper">
+        <nav class="col-md-2">  
+          <i class="far fa-address-book"></i>
+          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          <ul>
+            <li id="view">view</li>
+            <li id="add">add</li>
+            <li id="verify">verify</li>
+          </ul>
+        </nav>
+        <div class="col-md-10 content">
+          <form>
+            <div class="wrap">
+              <input id="name" placeholder="employee name" />
+            <div class="extra-inputs">
+              <input id="office" placeholder="office number" />
+              <input id="phone" placeholder="phone number" />
+            </div>
+            <button id="submit">
+              <i class="fas fa-search"></i>
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </button>
+          </div>
+          </form>
+        <div id="list"></div>
+        </div>
+      </div>
+     </div>
+    <script src="dom.js"></script>
+    <script src="employeeList.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>
